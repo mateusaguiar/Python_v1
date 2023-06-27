@@ -2,6 +2,7 @@
 Currency Converter
 -------------------------------------------------------------
 pip install requests
+get API from: https://apilayer.com/marketplace/exchangerates_data-api#documentation-tab
 '''
 import requests
 import datetime
@@ -45,7 +46,7 @@ def convert_currency():
           '&amount=' + str(amount))
 
    payload = {}
-   headers = {'apikey': 'Ibr1ouTT2mUhdsMVKZ65wkKPz16LCvmQ'}
+   headers = {'apikey': 'Enter you API key here'}
    response = requests.request('GET', url, headers=headers, data=payload)
    status_code = response.status_code
 
